@@ -32,6 +32,7 @@ dataRetirada: Date
 dataPrevistaDevolucao: Date
 
 Métodos das Classes
+
 Classe Livro
 verificarDisponibilidade(): Boolean
 
@@ -41,6 +42,7 @@ verificarAptidaoEmprestimo(): Boolean
 Classe Emprestimo
 registrarRetirada(data: Date): void
 registrarDevolucao(data: Date): void
+
 Relacionamentos
 Um Autor pode ter vários Livros.
 Um Emprestimo está associado a um Livro e a um Usuario.

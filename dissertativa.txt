@@ -1,0 +1,41 @@
+Paradigma de Programação mais indicado
+A programação orientada a objetos (POO) é o paradigma mais indicado para o desenvolvimento do sistema de gerenciamento da biblioteca. Isso porque o sistema possui entidades distintas (Livros, Autores, Usuários, Empréstimos) com atributos e comportamentos próprios. A POO permite organizar essas entidades em classes, facilitando a manutenção e evolução do sistema.
+Principais Vantagens:
+•	Organização: Cada entidade é representada como uma classe, com suas próprias propriedades e métodos.
+•	Reutilização de Código: Herança e polimorfismo permitem reaproveitar e estender funcionalidades.
+•	Facilidade de Manutenção: A modularidade da POO facilita a adição de novas funcionalidades sem comprometer o sistema.
+Elementos do Diagrama de Classes
+1.	Classes principais:
+Livro
+Autor
+Usuário
+Emprestimo
+2.	Propriedades das Classes:
+Classe Livro
+titulo: String
+autor: Autor
+genero: String
+Classe Autor
+nome: String
+nacionalidade: String
+Classe Usuário
+nome: String
+idade: int
+Classe Emprestimo
+livro: Livro
+usuario: Usuario
+dataRetirada: Date
+dataPrevistaDevolucao: Date
+Métodos das Classes
+Classe Livro
+verificarDisponibilidade(): Boolean
+Classe Usuario
+verificarAptidaoEmprestimo(): Boolean
+Classe Emprestimo
+registrarRetirada(data: Date): void
+registrarDevolucao(data: Date): void
+Relacionamentos
+Um Autor pode ter vários Livros.
+Um Emprestimo está associado a um Livro e a um Usuario.
+Um Usuario pode realizar vários Emprestimos.
+Essa estrutura simples e modular facilita a compreensão, manutenção e expansão do sistema.

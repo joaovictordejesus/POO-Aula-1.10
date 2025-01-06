@@ -10,27 +10,34 @@ Livro
 Autor
 Usuário
 Emprestimo
+
 2.	Propriedades das Classes:
 Classe Livro
 titulo: String
 autor: Autor
 genero: String
+
 Classe Autor
 nome: String
 nacionalidade: String
+
 Classe Usuário
 nome: String
 idade: int
+
 Classe Emprestimo
 livro: Livro
 usuario: Usuario
 dataRetirada: Date
 dataPrevistaDevolucao: Date
+
 Métodos das Classes
 Classe Livro
 verificarDisponibilidade(): Boolean
+
 Classe Usuario
 verificarAptidaoEmprestimo(): Boolean
+
 Classe Emprestimo
 registrarRetirada(data: Date): void
 registrarDevolucao(data: Date): void
